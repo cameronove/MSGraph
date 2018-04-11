@@ -1,4 +1,4 @@
-# MSGraph
+# MSGraph - Azure AD
 
 ## MSGraphAuthorization.psm1
 
