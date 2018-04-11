@@ -4,13 +4,13 @@ $Global:ClientID = "1950a258-227b-4e31-a9cf-717495945fc2" #well-known clientid f
 
 #some arbitrary path to keep your JSON token
 # PSCD = PowerShell Configuration Directory
-$Global:PSCD = "$env:USERPROFILE\Documents\WindowsPowerShell\Config"
-if(-not (Test-Path $Global:PSCD)){
-    mkdir $Global:PSCD   
+$PSCD = "$env:USERPROFILE\Documents\WindowsPowerShell\Config"
+if(-not (Test-Path $PSCD)){
+    mkdir $PSCD   
 }
 
 #the name of the file to store you oauth token
-$Global:FileTokenPath = "$Global:PSCD\MSGraphToken.json"
+$Global:FileTokenPath = "$PSCD\MSGraphToken.json"
 
 
 <#----------Acquire Token Functions----------#>
